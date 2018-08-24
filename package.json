@@ -1,0 +1,52 @@
+{
+	"name": "BrodcastApp",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"start": "concurrently -r 'tsc -w' 'node node_modules/react-native/local-cli/cli.js start'",
+		"test": "jest"
+	},
+	"dependencies": {
+		"@types/react": "^16.4.6",
+		"@types/react-native": "^0.56.3",
+		"@types/react-native-vector-icons": "^4.6.1",
+		"axios": "^0.18.0",
+		"concurrently": "^3.6.0",
+		"es6-symbol": "^3.1.1",
+		"mobx": "^4.0.1",
+		"mobx-react": "^5.0.0",
+		"mobx-utils": "^4.0.0",
+		"react": "16.4.1",
+		"react-native": "0.56.0",
+		"react-native-cardview": "^1.1.5",
+		"react-native-row": "seunlanlege/react-native-row",
+		"react-native-vector-icons": "^4.6.0",
+		"react-navigation": "^2.8.0",
+		"styled-components": "^3.3.3",
+		"typescript": "^2.9.2",
+		"unescape-html": "^1.1.0"
+	},
+	"devDependencies": {
+		"babel-jest": "23.4.0",
+		"babel-preset-react-native": "^5",
+		"jest": "23.4.1",
+		"react-test-renderer": "16.4.1"
+	},
+	"jest": {
+		"preset": "react-native"
+	},
+	"prettier": {
+		"jsxBracketSameLine": false,
+		"bracketSpacing": true,
+		"singleQuote": false,
+		"semi": false,
+		"useTabs": true,
+		"tabWidth": 4,
+		"printWidth": 80
+	},
+	"rnpm": {
+		"assets": [
+			"assets/fonts"
+		]
+	}
+}
