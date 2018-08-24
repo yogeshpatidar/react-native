@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { Button } from "react-native"
+import { TouchableHighlight, Text, ActivityIndicator } from "react-native"
 import { observer } from "mobx-react/native"
 import { AgoraSdk, AgoraSdkEvent } from "lib"
 import { View } from "components"
@@ -8,10 +8,14 @@ import { observable } from "mobx"
 @observer
 export class App extends Component<any> {
 	@observable
-	state = {
+	data = {
 		isMuted: true,
-		isJoined: false
+		isJoined: false,
+		loading: false,
+		audience: 0,
+		error: ""
 	}
+
 	constructor(props: any) {
 		super(props)
 		AgoraSdk.createEngine("27f83f371b5b437b9ecde8b0e97f5af3")
@@ -19,25 +23,42 @@ export class App extends Component<any> {
 		AgoraSdk.setChannelProfile(AgoraSdk.AgoraChannelProfileLiveBroadcasting)
 
 		AgoraSdk.enableAudio()
-		AgoraSdkEvent.addListener("DidOccurError", console.log)
-		AgoraSdkEvent.addListener("RemoteDidJoinedChannel", (...args) =>
+		AgoraSdkEvent.addListener("DidOccurError", (...args) => {
+			this.data.error = args as any
+		})
+		AgoraSdkEvent.addListener("LocalDidJoinedChannel", (...args) => {
+			this.data.loading = false
+			this.data.isJoined = true
+			this.data.audience = this.data.audience + 1
+			console.log({ LocalDidJoinedChannel: args })
+		})
+		AgoraSdkEvent.addListener("RemoteDidJoinedChannel", (...args) => {
+			this.data.audience = this.data.audience + 1
 			console.log({ RemoteDidJoinedChannel: args })
-		)
+		})
 	}
 
 	toggleAudio = () => {
-		this.state.isMuted = !this.state.isMuted
-		AgoraSdk.muteLocalAudioStream(this.state.isMuted)
+		this.data.isMuted = !this.data.isMuted
+		AgoraSdk.muteLocalAudioStream(this.data.isMuted)
 	}
 
 	join = () => {
-		this.state.isJoined = true
-		AgoraSdk.joinChannel(
-			null,
-			"rnchannel01",
-			"React Native for Agora RTC SDK",
-			Math.random() * 1000
-		)
+		if (!this.data.isJoined) {
+			console.log("joined")
+			this.data.loading = true
+			AgoraSdk.joinChannel(
+				null,
+				"rnchannel01",
+				"React Native for Agora RTC SDK",
+				Math.random() * 1000
+			)
+		} else {
+			console.log("left")
+			this.data.isJoined = false
+
+			AgoraSdk.leaveChannel()
+		}
 	}
 
 	render() {
@@ -49,20 +70,42 @@ export class App extends Component<any> {
 					flex: 1
 				}}
 			>
-				<Button
-					title={
-						this.state.isJoined ? "Join Channel" : "Leave Channel"
-					}
+				<TouchableHighlight
+					style={{
+						backgroundColor: "papayawhip",
+						padding: 50,
+						elevation: 1
+					}}
 					onPress={this.join}
-				/>
-				<Button
-					title={
-						this.state.isMuted
-							? "Switch to Host"
-							: `Switch to Audience`
-					}
+				>
+					{this.data.loading ? (
+						<ActivityIndicator />
+					) : this.data.isJoined ? (
+						<Text>Leave Channel</Text>
+					) : (
+						<Text>Join Channel</Text>
+					)}
+				</TouchableHighlight>
+				<View style={{ height: 60 }} />
+				<TouchableHighlight
+					style={{
+						backgroundColor: "papayawhip",
+						padding: 50,
+						elevation: 1
+					}}
 					onPress={this.toggleAudio}
-				/>
+				>
+					<Text>
+						{this.data.isMuted
+							? "Switch to Host"
+							: `Switch to Audience`}
+					</Text>
+				</TouchableHighlight>
+
+				<Text>Number of people in room {this.data.audience}</Text>
+				{this.data.error ? (
+					<Text>aha! error: {JSON.stringify(this.data.error)}</Text>
+				) : null}
 			</View>
 		)
 	}
