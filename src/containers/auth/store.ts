@@ -28,7 +28,7 @@ export class Auth {
 		password: string
 	}) => {
 		const mutation = `
-			mutation {
+			mutation Login($email: String!, $password: String!) {
 				login(email: $email, password: $password) {
 					token
 					user {
@@ -38,10 +38,12 @@ export class Auth {
 			}
 		`
 
-		const data = await this.client.request(mutation, {
-			email: email || "seunlanlege@gmail.com",
-			password: password || "joshua"
-		})
+		const data = await this.client
+			.request(mutation, {
+				email,
+				password
+			})
+			.catch(console.log)
 
 		console.log({ data })
 	}

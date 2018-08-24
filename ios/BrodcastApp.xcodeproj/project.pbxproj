@@ -16,7 +16,6 @@
 		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
 		139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
 		139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139FDEF41B06529B00C62182 /* libRCTWebSocket.a */; };
-		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -39,19 +38,26 @@
 		2DCD954D1E0B4F2C00145EB5 /* BrodcastAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* BrodcastAppTests.m */; };
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		3207471DC04848CA89900EEC /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E0465049C64340AF82C46CC8 /* MaterialCommunityIcons.ttf */; };
-		3B88476621232AD30031746B /* AgoraEnum.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B88475C21232AD20031746B /* AgoraEnum.m */; };
 		3B88476721232AD30031746B /* AgoraEnum.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B88475C21232AD20031746B /* AgoraEnum.m */; };
-		3B88476821232AD30031746B /* AgoraRtcEngineModule+EnumConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B88475F21232AD20031746B /* AgoraRtcEngineModule+EnumConvert.m */; };
 		3B88476921232AD30031746B /* AgoraRtcEngineModule+EnumConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B88475F21232AD20031746B /* AgoraRtcEngineModule+EnumConvert.m */; };
-		3B88476A21232AD30031746B /* AgoraViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B88476221232AD20031746B /* AgoraViewManager.m */; };
 		3B88476B21232AD30031746B /* AgoraViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B88476221232AD20031746B /* AgoraViewManager.m */; };
-		3B88476C21232AD30031746B /* AgoraRtcEngineModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B88476321232AD20031746B /* AgoraRtcEngineModule.m */; };
 		3B88476D21232AD30031746B /* AgoraRtcEngineModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B88476321232AD20031746B /* AgoraRtcEngineModule.m */; };
-		3B88476E21232AD30031746B /* AgroaEnumConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B88476521232AD30031746B /* AgroaEnumConvert.m */; };
 		3B88476F21232AD30031746B /* AgroaEnumConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B88476521232AD30031746B /* AgroaEnumConvert.m */; };
 		3BD836732123284E00B88E3B /* AgoraRtcEngineKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BD836722123284E00B88E3B /* AgoraRtcEngineKit.framework */; };
 		3BD836772123290E00B88E3B /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BD836762123290E00B88E3B /* VideoToolbox.framework */; };
 		3BD836792123294600B88E3B /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BD836782123294600B88E3B /* libresolv.tbd */; };
+		3BE7919B2130A3D000BE9579 /* AgoraEnum.h in Sources */ = {isa = PBXBuildFile; fileRef = 3BE791942130A30100BE9579 /* AgoraEnum.h */; };
+		3BE7919C2130A3D000BE9579 /* AgoraEnum.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE791922130A30100BE9579 /* AgoraEnum.m */; };
+		3BE7919D2130A3D000BE9579 /* AgoraRtcEngineModule.h in Sources */ = {isa = PBXBuildFile; fileRef = 3BE7918E2130A30100BE9579 /* AgoraRtcEngineModule.h */; };
+		3BE7919E2130A3D000BE9579 /* AgoraRtcEngineModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE791902130A30100BE9579 /* AgoraRtcEngineModule.m */; };
+		3BE7919F2130A3D000BE9579 /* AgoraRtcEngineModule+EnumConvert.h in Sources */ = {isa = PBXBuildFile; fileRef = 3BE791912130A30100BE9579 /* AgoraRtcEngineModule+EnumConvert.h */; };
+		3BE791A02130A3D000BE9579 /* AgoraViewManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 3BE791932130A30100BE9579 /* AgoraViewManager.h */; };
+		3BE791A12130A3D000BE9579 /* AgoraNotify.h in Sources */ = {isa = PBXBuildFile; fileRef = 3BE7918C2130A30100BE9579 /* AgoraNotify.h */; };
+		3BE791A22130A3D000BE9579 /* AgoraRtcEngineModule+EnumConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE7918D2130A30100BE9579 /* AgoraRtcEngineModule+EnumConvert.m */; };
+		3BE791A32130A3D000BE9579 /* AgoraViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE7918F2130A30100BE9579 /* AgoraViewManager.m */; };
+		3BE791A42130A3D000BE9579 /* AgroaEnumConvert.h in Sources */ = {isa = PBXBuildFile; fileRef = 3BE791952130A30100BE9579 /* AgroaEnumConvert.h */; };
+		3BE791A52130A3D000BE9579 /* AgroaEnumConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE791642130A30100BE9579 /* AgroaEnumConvert.m */; };
+		3BE791A62130A55000BE9579 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		42C59C0369794847B85D42B0 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6B26394156F4B6080F68311 /* Zocial.ttf */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		7D0D5742D23745979E6566A0 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12631F3233C24AC693E449F3 /* Ionicons.ttf */; };
@@ -398,6 +404,17 @@
 		3BD836722123284E00B88E3B /* AgoraRtcEngineKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AgoraRtcEngineKit.framework; path = BrodcastApp/AgoraRtcEngineKit.framework; sourceTree = "<group>"; };
 		3BD836762123290E00B88E3B /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 		3BD836782123294600B88E3B /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		3BE791642130A30100BE9579 /* AgroaEnumConvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgroaEnumConvert.m; sourceTree = "<group>"; };
+		3BE7918C2130A30100BE9579 /* AgoraNotify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgoraNotify.h; sourceTree = "<group>"; };
+		3BE7918D2130A30100BE9579 /* AgoraRtcEngineModule+EnumConvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AgoraRtcEngineModule+EnumConvert.m"; sourceTree = "<group>"; };
+		3BE7918E2130A30100BE9579 /* AgoraRtcEngineModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgoraRtcEngineModule.h; sourceTree = "<group>"; };
+		3BE7918F2130A30100BE9579 /* AgoraViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgoraViewManager.m; sourceTree = "<group>"; };
+		3BE791902130A30100BE9579 /* AgoraRtcEngineModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgoraRtcEngineModule.m; sourceTree = "<group>"; };
+		3BE791912130A30100BE9579 /* AgoraRtcEngineModule+EnumConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AgoraRtcEngineModule+EnumConvert.h"; sourceTree = "<group>"; };
+		3BE791922130A30100BE9579 /* AgoraEnum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgoraEnum.m; sourceTree = "<group>"; };
+		3BE791932130A30100BE9579 /* AgoraViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgoraViewManager.h; sourceTree = "<group>"; };
+		3BE791942130A30100BE9579 /* AgoraEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgoraEnum.h; sourceTree = "<group>"; };
+		3BE791952130A30100BE9579 /* AgroaEnumConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgroaEnumConvert.h; sourceTree = "<group>"; };
 		3E40371721EA461492AF8AD3 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		3FC7573228CB456CAAAFABED /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
 		5603205C74F04A7E9C67263C /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
@@ -561,16 +578,27 @@
 			isa = PBXGroup;
 			children = (
 				3B88475E21232AD20031746B /* AgoraEnum.h */,
+				3BE791942130A30100BE9579 /* AgoraEnum.h */,
 				3B88475C21232AD20031746B /* AgoraEnum.m */,
+				3BE791922130A30100BE9579 /* AgoraEnum.m */,
 				3B88475D21232AD20031746B /* AgoraNotify.h */,
 				3B88475B21232AD20031746B /* AgoraRtcEngineModule.h */,
 				3B88476321232AD20031746B /* AgoraRtcEngineModule.m */,
 				3B88476121232AD20031746B /* AgoraRtcEngineModule+EnumConvert.h */,
+				3BE7918E2130A30100BE9579 /* AgoraRtcEngineModule.h */,
+				3BE791902130A30100BE9579 /* AgoraRtcEngineModule.m */,
+				3BE791912130A30100BE9579 /* AgoraRtcEngineModule+EnumConvert.h */,
 				3B88475F21232AD20031746B /* AgoraRtcEngineModule+EnumConvert.m */,
 				3B88476021232AD20031746B /* AgoraViewManager.h */,
+				3BE791932130A30100BE9579 /* AgoraViewManager.h */,
 				3B88476221232AD20031746B /* AgoraViewManager.m */,
 				3B88476421232AD20031746B /* AgroaEnumConvert.h */,
+				3BE7918C2130A30100BE9579 /* AgoraNotify.h */,
+				3BE7918D2130A30100BE9579 /* AgoraRtcEngineModule+EnumConvert.m */,
+				3BE7918F2130A30100BE9579 /* AgoraViewManager.m */,
+				3BE791952130A30100BE9579 /* AgroaEnumConvert.h */,
 				3B88476521232AD30031746B /* AgroaEnumConvert.m */,
+				3BE791642130A30100BE9579 /* AgroaEnumConvert.m */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -1294,12 +1322,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B88476621232AD30031746B /* AgoraEnum.m in Sources */,
-				3B88476821232AD30031746B /* AgoraRtcEngineModule+EnumConvert.m in Sources */,
-				3B88476A21232AD30031746B /* AgoraViewManager.m in Sources */,
-				3B88476E21232AD30031746B /* AgroaEnumConvert.m in Sources */,
-				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
-				3B88476C21232AD30031746B /* AgoraRtcEngineModule.m in Sources */,
+				3BE791A62130A55000BE9579 /* AppDelegate.m in Sources */,
+				3BE7919B2130A3D000BE9579 /* AgoraEnum.h in Sources */,
+				3BE7919C2130A3D000BE9579 /* AgoraEnum.m in Sources */,
+				3BE7919D2130A3D000BE9579 /* AgoraRtcEngineModule.h in Sources */,
+				3BE7919E2130A3D000BE9579 /* AgoraRtcEngineModule.m in Sources */,
+				3BE7919F2130A3D000BE9579 /* AgoraRtcEngineModule+EnumConvert.h in Sources */,
+				3BE791A02130A3D000BE9579 /* AgoraViewManager.h in Sources */,
+				3BE791A12130A3D000BE9579 /* AgoraNotify.h in Sources */,
+				3BE791A22130A3D000BE9579 /* AgoraRtcEngineModule+EnumConvert.m in Sources */,
+				3BE791A32130A3D000BE9579 /* AgoraViewManager.m in Sources */,
+				3BE791A42130A3D000BE9579 /* AgroaEnumConvert.h in Sources */,
+				3BE791A52130A3D000BE9579 /* AgroaEnumConvert.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1417,7 +1451,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 7;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = 4FH3HKR433;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1451,7 +1485,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = 4FH3HKR433;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

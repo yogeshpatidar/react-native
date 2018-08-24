@@ -19,9 +19,10 @@ export class App extends Component<any> {
 	constructor(props: any) {
 		super(props)
 		AgoraSdk.createEngine("27f83f371b5b437b9ecde8b0e97f5af3")
-		AgoraSdk.enableAudio()
+
 		AgoraSdk.setChannelProfile(AgoraSdk.AgoraChannelProfileCommunication)
 
+		AgoraSdk.enableAudio()
 		AgoraSdkEvent.addListener("DidOccurError", (...args) => {
 			this.data.error = args as any
 		})
